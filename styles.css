@@ -62,10 +62,11 @@ button:hover{
   color: greenyellow;
 }
 .mynav a:visited{
-  color: inherit;
+  color: green;
 }
 .mynav a:active{
   text-decoration: underline;
+  text-decoration-color: black;
 }
 /*Home*/
 .home{
@@ -133,6 +134,10 @@ button:hover{
   font-size: 1.5em;
   color: #596fd4;
 }
+.about a{
+  color: inherit;
+  text-decoration-color: blue;
+}
 
 
 
@@ -180,13 +185,16 @@ progress{
 ;
 }
 #cv a{
-  color: black;
+  color: initial;
   font-size: 1.5em;
   text-decoration-color: blue;
   
 }
-#cv a:hover{
+#cv a:hover, .about a:hover{
   color: green;
+}
+#cv a:visited, .about a:hover{
+  text-decoration-color: palevioletred;
 }
 #cv i{
   color: green;
@@ -222,6 +230,16 @@ progress{
 #social ul{
   list-style: none;
   padding-top: 5px;
+  padding: 10px 10px 10px 10px;
+}
+#social li{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#social a{
+  color: green;
+  margin-left: 10px;
+  text-decoration: none;
 }
 
 
@@ -287,29 +305,158 @@ footer{
 
 
 /*styles for bigger screens*/
-@media screen and (min-width:800px){
-  .body{
-    width: 50%;
-    margin-left: 25%;
+@media(min-width: 1000px){
+  .mynav{
+    
   }
-  footer{
-    display: block;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    background-color: ;
-    margin: 10px 10px 10px 10px;
+ 
+ /*Home*/
+.home{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 0.5em;
+  background: url(harun2.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  backface-visibility: visible;
+  z-index: 1000;
+}
+
+.header{
+    position: absolute;
+    padding: 20px 20px 20px 20px;
+    top: 40%;
+}
+.header h2{
+  font-size: 3em;
+}
+.header h3{
+  font-size: 2em;
+}
+.header h2{
+  font-size: 1.5em;
+}
+.header a{
+  font-size: 2em;
+
+}
+
+/*About*/
+.about,.skills,.projects{
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#pic img{
+  width: 300px;
+  height: 450px;
+}
+#me{
+  width: 25vw;
+  margin-left: 5vw;
+  box-shadow: initial;
+  background: initial;
+  
+}
+#me2{
+  width: 20vw;
+  margin-left: 5vw;
+  
+}
+#me, #me2{
+  font-size: 1.3em;
+}
+.about h4,.skills h4,.projects h4,.contact h4,.about h5,.skills h5,.projects h5,.contact h5{
+  box-shadow: none;
+  color: black;
+  margin-left: 5vw;
+  margin-top: 5vw;
+}
+
+/*skills*/
+#experience{
+  width: 30vw;
+
+}
+#front,#back{
+  background: inherit;
+  box-shadow: none;
+}
+#cv{
+  margin-left: 10vw;
+  width: 30vw;
+}
+.skills h4{
+  margin-left: 10vw;
+}
+.contact{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-left: 10vw;
+}
+.contact iframe{
+  width: 30vw;
+}
+#social{
+  width: 30vw;
+  box-shadow: none;
+}
+#social h5{
+  font-size: 1.8em;
+}
+#social li{
+  font-size: 1.5em;
+}
+#social a{
+  font-size: 1.3em;
+}
+footer{
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 35vw;
 }
 .fa {
-    padding: 10px;
-    font-size: 20px;
-    widows: 10px;;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px 5px 2px;
-    border-radius: 40%;
-  }
-  .fa-twitter,.fa-google,.fa-linkedin,.fa-youtube,.fa-instagram,.fa-github,.fa-whatsapp,.fa-facebook {
-    background: inherit;
-  }
+  padding: ;
+  font-size: 10em;
+  width: 20px;
+  text-decoration: none;
+  margin: 5px 2px 5px 2px;
+  border-radius: 40%;
+}
+.fa-facebook {
+  color: #3B5998;
+}
+
+.fa-twitter {
+  color:  #55ACEE;
+}
+
+.fa-google {
+  color: #dd4b39;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-instagram {
+  color: rgb(241, 93, 118);
+}
+.fa-github{
+  color: black;
+}
+.fa-whatsapp{
+  color: green
+}
+.fa-facebook, .fa-twitter,.fa-google,.fa-linkedin,.fa-youtube,.fa-instagram,.fa-github,.fa-whatsapp{
+  background: initial;
+}
   
 }
