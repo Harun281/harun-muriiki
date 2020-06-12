@@ -3,25 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harun Muriki</title>
+    <title>Harun Muriiki</title>
     <link rel="icon" href="icons8-deviantart.svg" type = "image/x-icon">
     <!--MyStyles-->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--?<script>Math.random()</script>-->
+    
     <!-- Latest compiled and minified CSS -->
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">-->
     <!--Fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css' rel='stylesheet'>
-    <link rel="icon" type="image/gif" href="" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./fontawesome-free-5.12.0-web/css/all.min.css"/>
     
 </head>
 <body >
-<div class="body">
+
     <!--Home section-->
+    <header id="home">
+        <!--Navbar-->
+        <nav id="nav">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <div  class="logo">High Tech Inc.</div>
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!--links-->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="scroll-link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="scroll-link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="scroll-link">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="scroll-link">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Banner-->
+        <div class="banner">
+            <div class="container">
+                <h2>Hey! I'am Harun Muriiki</h2>
+                <h3>Web Developer</h3>
+                <h4>Moi University</h4>
+            <a href="#about" class="scroll-link btn btn-green">More About Me</a>
+
+            </div>
+        </div>
+
+    </header>
     
-   <div id="title">
+   <!--< id="title">
         <div id="name">High Tech Inc.</div>
-        <!--<button id="menu">☰</button>-->
+        <!--<button id="menu">☰</button>
         
     </div>
                                                                                     <div class="mynav">
@@ -40,7 +91,7 @@
                 <h4>Moi University</h4>
             <a href="#about">More About Me</a>
         </div>
-    </section>
+    </section>-->
     
     <hr>
 
@@ -241,7 +292,6 @@
         </footer>
     </section>
 
-</div>
 
 
 
@@ -259,6 +309,6 @@
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/0b7f586948.js" crossorigin="anonymous"></script>
     <!--My script-->
-    <script src="script.js" defer></script>
+    <script src="js/portfolio.js" defer></script>
 </body>
 </html>
