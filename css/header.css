@@ -124,6 +124,7 @@ Scroll
 nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
+  transform: top 2s;
 }
 /* fixed nav */
 .fixed-nav {
@@ -174,11 +175,11 @@ nav {
   transition: var(--transition);
 }
 .show-links {
-  height: 200px;
+  height: 500px;
 }
 .links a {
   background: var(--clr-white);
-  color: var(--clr-primary-1);
+  color: var(--clr-grey-5);
   font-size: 1.1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -258,6 +259,7 @@ header {
 @media screen and (min-width: 800px) {
   nav {
     background: transparent;
+    transition: top 1s;
   }
   .nav-center {
     width: 90vw;
@@ -321,6 +323,7 @@ header {
 }
 .container h4{
   font-size: 1.5em;
+  color: rgb(70, 191, 228);
 }
 .container a{
   font-size: 1.5em;
