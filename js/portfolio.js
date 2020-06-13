@@ -27,6 +27,8 @@ navToggle.addEventListener("click", function () {
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
 
+var prevScrollPos = window.pageYOffset;
+
 window.addEventListener("scroll", function () {
   const scrollHeight = window.pageYOffset;
   const navHeight = navbar.getBoundingClientRect().height;
@@ -35,15 +37,29 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("fixed-nav");
   }
+  const currentScrollPos = window.pageYOffset;
+
+  //hide navbar
+  if(prevScrollPos > currentScrollPos ){
+    document.getElementById('nav').style.top = '0';
+  }else{
+    document.getElementById('nav').style.top = '-100px';
+    
+  }
+  prevScrollPos = currentScrollPos;
   // setup back to top link
 
   if (scrollHeight > 500) {
-    console.log("helo");
+    //console.log("helo");
 
     topLink.classList.add("show-link");
   } else {
     topLink.classList.remove("show-link");
   }
+
+  //add class active to navbar on scroll
+  
+
 });
 
 // ********** smooth scroll ************
